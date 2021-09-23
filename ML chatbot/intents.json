@@ -1,0 +1,206 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+        "Hi,How can I help you?\n1.Need to plan a model\n2.Want to know more about planning\n3.Write to us"
+        ]
+      },
+      {
+        "tag": "response1",
+        "patterns": ["Need to plan a model"],
+        "responses": [
+          "What you want?\n1.Investment Planning\n2.Tax Planning\n3.Retirement Planning\n4.Finance Planning\n5.Estate Planning\n6.Wealth Planning"
+        ]
+      },
+      {
+        "tag": "response2",
+        "patterns": ["Want to know more about planning"],
+        "responses": ["Visit our website to know more about planning :-)"]
+      },
+      {
+        "tag": "response3",
+        "patterns": [
+          "Write to us"
+        ],
+        "responses": [
+          "Mail us your doubt at email id given in website \nHave a nice day:-)"
+          
+
+
+        ]
+      
+      },
+      {
+        "tag": "finplan",
+        "patterns": ["Finance planning"],
+        
+        "responses": ["What % can you put aside for Savings/Investments?"
+        ]
+      },
+      {
+        "tag": "finplana",
+        "patterns": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100"],
+        "responses": ["What are your short term goals?1.choose:Earn a new certificate or degree\n2.Improve your performance numbers\n3.Improve your networking and communication skills.\n4.Change your job\n5.Improve your work-life balance.\n6.Waste less time during work hours.\n7.Make a website for yourself.\n8.Communicate with your coworkers more.\n9.Get to work earlier.\n10.Organize your workstation.\n11.Get familiar with new technology.\n12.Start a personal project.\n13.Observe your coworkers."]
+      },
+      {
+        "tag": "finplanb",
+        "patterns": ["Earn a new certificate or degree",
+          "Improve your performance numbers",
+          "Improve your networking and communication skills",
+          "Change your job",
+          "Improve your work-life balance",
+          "Waste less time during work hours",
+          "Make a website for yourself",
+          "Communicate with your coworkers more",
+          "Get to work earlier",
+          "Organize your workstation",
+          "Get familiar with new technology",
+          "Start a personal project",
+          "Observe your coworkers",
+        "others"],
+        "responses": ["What are your medium term goals?\nchoose:1.Children's Marriage\n2.Children's Education\n3.Vacation\n4.Buying a Car\n5.Buying a House\n6.Paying off debt\n7.others"]
+      },
+      {
+        "tag": "finplanc",
+        "patterns": ["Children's Marriage", "Children's Education", "Vacation", "Buying a Car", "Buying a House", "Paying off debt","others"],
+        "responses": ["What are your long term goals?\n.choose:1.Earn a new degree\n2.Start own business\n3.Quit working 9-to-5.\n4.Land a promotion\n5.Get a pay-raise\n6.Change your career\n7.Become a thought leader\n8.Grow a social media following\n9.others"]
+      },
+      {
+        "tag": "finpland",
+        "patterns": ["Earn a new degree",
+        "Start own business",
+        "Quit working 9-to-5",
+        "Land a promotion",
+        "Get a pay-raise",
+        "Change your career",
+        "Become a thought leader",
+        "Grow a social media following",
+      "others"],
+        "responses": ["okay...your response is recorded"]
+      },
+      {
+        "tag": "taxplan",
+        "patterns": [
+          "Tax Planning"
+        ],
+        "responses": [
+          "How many dependant members in your family?\n(between one to ten...NOTE:Write in words)"
+
+        ]
+        
+      },
+      {"tag":"taxplan*",
+        "patterns":["one","two","three","four","five","six","seven","eight","nine","ten"],
+        "responses":["Ok!!Your response is recorded"]
+
+      },
+      {
+        "tag": "retplan",
+        "patterns": [
+          "Retirement Planning"
+        ],
+        "responses": [
+          "What is your expected retirement age?\n(write in form 51-55,66-70,)"
+        ]
+      },
+      
+      {
+        "tag": "retplanb",
+        "patterns": ["36-40","41-45","46-50","51-55","55-60","61-65","66-70","71-75","76-80"
+        ],
+        "responses": ["Ok!your response is recorded..."]
+        
+      },
+      {
+        "tag": "retplana",
+        "patterns": [
+          "21-25","26-30","31-35","36-40","41-45","46-50","51-55","56-60","61-65","66-70","71-75","76-80"
+        ],
+        "responses": [
+          "What is your life expectancy?                    (write in form 51-55,66-70)"
+        ]
+      },
+     
+      {
+        "tag": "weaplan",
+        "patterns": ["Wealth Planning"],
+        "responses":["what is your investment horizon?\n(short,moderate,long)"]
+      },
+      {
+        "tag":"weaplan*",
+        "patterns": ["short","moderate","long"],
+         "responses":["What is your risk willingness?\n(low,medium,high)"]
+        
+      },
+      {
+        "tag": "weaplana",
+        "patterns": ["low"],
+        
+        "responses": ["\nDebt  Equity\n95\t5\n90\t10\n85\t15\n80\t20"
+        ]
+      },
+      {
+        "tag": "weaplanb",
+        "patterns": ["medium"],
+        
+        "responses": ["\nDebt  uity\n75\t25\n70\t30\n65\t35\n60\t40\n55\t45\n50\t50\n"
+        ]
+      },
+      {
+        "tag": "weaplanc",
+        "patterns": ["high"],
+        
+        "responses": ["\nDebt  quity\n45\t55\n40\t60\n35\t65\n30\t70\n25\t75\n20\t80\n15\t85\n10\t90\n5\t95\n0\t100\n"
+        ]
+      },
+      {
+        "tag": "invplan",
+        "patterns": ["Investment planning"],
+        
+        "responses": ["In which investment you are interested?\n1.Growth investments\n2.Shares\n3.Property\n4.Defensive investments"]
+
+      },
+      {
+        "tag": "invplana",
+        "patterns": ["Growth investments","Shares","Property","Defensive investments"],
+        
+        "responses": ["What are your realistic return expectations?\nChoose:1.Very less\n2.Less\n3.Good profit"]
+
+      },
+      {
+        "tag": "invplanb",
+        "patterns": ["very less","Less","Good profit"],
+        
+        "responses": ["OKAY!!Your response is recorded....."]
+
+      },
+      {
+        "tag":"estplan",
+        "patterns":["Estate Planning"],
+        "responses":["We are bringing this service soon....stay in touch with us :-)"]
+
+      },
+      {
+        "tag":"retplannn",
+        "patterns":["46-50","51-55","56-60","61-65","66-70","71-75","76-80","81-85","86-90","91-95","96-100","101-105","105-110","110-115"],
+        "responses":["Okay...Your response is recorded"]
+        
+      }
+
+
+      
+      
+  
+      
+      
+    ]
+}
